@@ -1,0 +1,16 @@
+if SHIELD_TBK_MINI_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "tbk_mini"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_TBK_MINI_LEFT
+
+if SHIELD_TBK_MINI_LEFT || SHIELD_TBK_MINI_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_TBK_MINI_LEFT || SHIELD_TBK_MINI_RIGHT
